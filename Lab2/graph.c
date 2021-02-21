@@ -12,7 +12,7 @@ int main() {
     float yMin = INFINITY;
     float xMax;
     float xMin;
-
+    // Kobe
     // Print header
     printf("\nPlot for y = abs(1.5 * sin(x^2) * 2x^(-1) * e^(0.1x^(2)) from x = %.2f to x = %.2f.\n",
                      xStart, xRange);
