@@ -1,0 +1,9 @@
+Ryan O'Halloran - Lab 2
+
+From the user's perspective, graph.c displays the equation for a function:
+	abs(1.5 * sin(x^2) *2x^(-1) * e^(0.1x^2) from x=4.67 to x=6.39,
+followed by a table of x and y values for that function. Beside each y value is a calculated number of stars/asterisks ("*"). The number of stars is proportional to the y component for each x value. The x value increments by 0.01 on each line, and this creates an effect that smoothly mirrors the x-y plot of the function. After the graph reaches the end of its range, it displays the minimum and maximum y values of the function.
+
+The program begins by declaring all variables. After this it displays the equation for the function, followed by the "X" and "Y" headers. After this, the main loop begins by incrementing the x variable, then calculating each iteration's y-value. The program then uses if statements to determine if that iteration's y-value is either larger than the previous maximum y-value, or smaller than the previous x-value, if either of these is true, the new minimum/maximum is reassigned. After this, the program calculates the number of stars to display by multiplying the y-value by 3 (an arbitrary number that makes the graph look somewhat accurate). After this, the program prints the x-value and y-value for that iteration. Lastly, the previously-calculated stars are printed. After the loop ends, the maximum and minimum y-values and their respective x-value locations are printed, then the program ends.
+
+I verified the program's output by comparing it to an internet grapher's output. The function displayed by the internet grapher closely mirrored my program. I did the same for different ranges of the function, and each time, my program matched the internet grapher, verifying to me that my program's results are correct.
