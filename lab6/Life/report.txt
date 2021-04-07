@@ -1,0 +1,10 @@
+Ryan O'Halloran
+CSE 20311 - Lab 6
+Conway's Game of Life
+March 29th, 2021
+
+From the user's perspective, this is a pretty cool program. The user is presented with options to add cells, remove cells, advance to the next iteration, play continuously, or quit. The game itself is really pretty simple; once the user knows how to properly enter coordinates, it's not very hard to run. If the user chooses to run in batch mode, all they need is a good scene file. I have 5 different scene files in this directory - some of which I got ideas for from the game of life Wiki, and others I got ideas for from a math.cornell.edu site on the game of life. The user can enter the scene file names as a command line argument, and the program will run them. If at any point the user makes minor errors throughout, the program lets them know, and in most cases, they are just prompted to re-enter, and in some other cases the program exits entirely. When the program is running continuously, the user can elect to exit by using control c.
+
+Internally the program works through a switch statement that depends on the number of command line arguments. If the number of command line arguments is 1, the program runs in interactive mode. If it is 2, it runs in batch mode. If it is is more than 2, it gives an error. The program has a number of functions in its function file. The functions each serve important purposes for the program, including adding new cells, removing cells, determining the next iteration of cells, printing the board, and printing the options. It uses if statements to determine if the user entered something improperly and controls for all bad entries. The batch mode opens the scenes with a file pointer. 
+
+I verified that my program worked by testing numerous different scenes. I also entered my own coordinates and tried a bunch of different coordinate options. I tested several different improper entries and for each reasonable one, the program displayed a proper error message. Everything else seemed to go great.
